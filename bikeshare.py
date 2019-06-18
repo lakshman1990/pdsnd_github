@@ -181,16 +181,16 @@ def user_stats(df):
 # Shows raw data to the users
 def showRawData(cityName):
     raw_data = pd.read_csv(CITY_DATA[city])
-    row_count = 5
+    data_count = 5
     while True:
         try:
-            print(raw_data.iloc[:row_count,:raw_data.shape[1]])
+            print(raw_data.iloc[:data_count,:raw_data.shape[1]])
             requestData = input('\nDo you want to see more raw data for the city you selected?\n')
         except:
             continue
         
         if requestData.lower() == 'yes':
-            row_count = row_count + 5
+            data_count = data_count + 5
             continue
         else:
             break
