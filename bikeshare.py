@@ -178,9 +178,8 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-def showRawData(city):
-
-    # Shows raw data to the users
+# Shows raw data to the users
+def showRawData(cityName):
     raw_data = pd.read_csv(CITY_DATA[city])
     row_count = 5
     while True:
@@ -211,7 +210,7 @@ def main():
         if rawData.lower() != 'yes':
             break
         else:
-            showRawData(city)
+            showRawData(cityName)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
