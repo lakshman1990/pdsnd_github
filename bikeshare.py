@@ -179,7 +179,7 @@ def user_stats(df):
     print('-'*40)
 
 def displayRawData(cityName):
-    raw_data = pd.read_csv(CITY_DATA[city])
+    raw_data = pd.read_csv(CITY_DATA[cityName])
     data_count = 5
     while True:
         try:
@@ -209,7 +209,7 @@ def main():
         if rawData.lower() != 'yes':
             break
         else:
-            displayRawData(cityName)
+            displayRawData(city)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
