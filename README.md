@@ -5,7 +5,7 @@
 Explore US Bikeshare Data
 
 ### Description
-This project imports the bikeshare data to calculate statistical details.
+This project imports the bikeshare data to calculate statistical details. It uses three data files of Chicago, New York and Washington.
 
 ### Files used
 bikeshare.py
